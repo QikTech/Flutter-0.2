@@ -1,15 +1,20 @@
 void main() {
 
-//STRING INTERPOLATION
-String characterName = "Ketan";
-String characterAge = "24";
+//STRING DataType
+String firstName = "Ketan";
 
-	print('There Once was a man named ${characterName}');
-	print('He was ${characterAge} years old');
+//Number DataType
+int age = 24;
+double gpa=6.5;
 
-  characterName = "prasanna";
+//Boolean DataType
+bool isAbove18 = false;
 
-	print('He really liked the name ${characterName}');
-	print("But he didn't like being ${characterAge}");
+print(firstName);
+print(gpa);
+print(isAbove18);
+
+
+
 
 }
