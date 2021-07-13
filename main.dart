@@ -2,17 +2,27 @@ import "dart:math";
 import "dart:io";
 
 void main() {
-  //print('what is your name:');
-  //String userName= stdin.readLineSync(); // //TAKE INPUT FROM USER
-  //print('hey ${userName}');
 
-  print('Enter First number:');
-  String num1=stdin.readLineSync();
+print('Roses are red');
+print('Skies are blue');
+print('i love you');
 
-  print('Enter Second number:');
-  String num2=stdin.readLineSync();
+//MADLIB GAME
+print('Enter color');
+String color = stdin.readLineSync();
 
-  print(
-    int.parse(num1)+int.parse(num2)
-  );
+print('Enter noun');
+String noun = stdin.readLineSync();
+
+print('Enter celebrity');
+String celebrity = stdin.readLineSync();
+
+print('--------');
+print('Roses are ${color}');
+print('${noun} are blue');
+print('i love ${celebrity}');
+
+
+
+
 }
