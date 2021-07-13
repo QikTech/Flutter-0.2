@@ -1,47 +1,26 @@
+import "dart:math";
+
 void main() {
 
-String greetings = "HellO";
-//                  01234
+int quantity=300;
+double price=5.99;
 
-print(greetings);
-print("above string includes ${greetings.length} characters");
+//SHORTHAND +=
+quantity=quantity+50;
+quantity+=50; // /*-+
+print(quantity);
+//Increment SHORTHAND
+quantity++;
+print(quantity);
 
+//print(5+3*(2/7));
+print(10/3); //divide operator 
+print(10%3); //modular operator 
 
-print('---------');
-print(greetings[0]);
-print(greetings[1]);
-print(greetings[2]);
-print(greetings[3]);
-print(greetings[4]);
-
-print('---------');
-print(greetings.toUpperCase());
-print(greetings.toLowerCase());
-
-print('--------- index position of given character');
-print(greetings.indexOf("e"));
-
-print('--------- checks if contains that character');
-print(greetings.contains("e"));
-print(greetings.contains('p'));
-
-print('--------- String Concatenation');
-String firstName='prasad';
-String lastName=' sawant';
-print(firstName+lastName);
-print(lastName[0]);
-
-print('--------- String Interpolation');
-print("And his name is ${firstName.toUpperCase()+lastName.toUpperCase()}");
-
-
-
-
-
-
-
-
-
+print("------FROM MATH LIABRARY");
+print(min(1,9));
+print(max(1,9));
+print(sqrt(144)); //SQUARE ROOT
 
 
 }
