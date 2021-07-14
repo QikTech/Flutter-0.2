@@ -1,33 +1,40 @@
 import "dart:math";
 import "dart:io";
 
-
-
+//COMPARRISON OPERATORS
 void main() {
-// example 1
+
   bool isSmart = true;
-  if(isSmart){
-    print('You are Smart');
-  }
-  else {
-  print('You should learn more');
+  bool isStudent = false;
+
+//AND - BOTH CONDITIONAL STATEMENTS NEEDS TO BE TRUE
+  if(isSmart && isStudent){
+    print('1. You are a Smart Student');
   }
 
-// example 2
-  String greeting = 'hello';
-  if(greeting.contains('e')){
-    print('Greetings has e in it');
-  }
-  else {
-    print('E not found');
+
+// OR - OPERATOR ie.|| ONLY ONE STATEMENT NEED TO BE TRUE, ***ONLY TRUE REQ***
+if(isSmart || isStudent){ // or operator
+  print('2. You are either Smart or a Student or both');
+}
+
+  if(isSmart && isStudent){
+    print('3. You are a smart student');
+  } else if (isSmart && !isStudent){
+    print('4.you are a smart but not a Student');
   }
 
-// SHORTHAND FOR IF ELSE EXAMPLE 2 (ONLY FOR SINGLE CONDITION)
-  if(greeting.contains('e')) print('Greetings has e in it');
-  
-  else print('E not found');
+  if(isSmart && isStudent){
+    print('5. You are a smart student');
+  } else if (isSmart && !isStudent){
+    print('6.you are a smart but not a Student');
+  }
 
 }
+
+
+
+
 
 
 
