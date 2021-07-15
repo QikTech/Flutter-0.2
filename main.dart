@@ -9,16 +9,29 @@ String prompt(String promptText){
 }
 
 
+
+
 void main() {
 
-  String answer="dombivli";
-  String guess ="";
-  int guessCount=0;
+  List<String> friends=['tushar','ketan','prasanna','susmit'];
 
-  while(guess != answer){ //LOOP GUARD
-    guess = prompt("Where Do Prasad Live: ");
-    guessCount++;
+//FOR IN LOOP
+  for(String friend in friends){
+    print(friend);
   }
 
-  print("May Dombivli bless you won in ${guessCount} guesses");
+//FOR LOOP
+  //for(int i=0; i<friends.length; i++){
+  //  print(friends[i].toUpperCase());
+  //}
+
+  //WHILE LOOP 
+  //  int i=0; //INITIALIZATION OF COUNTER VARIABLE
+  //  while(i<4){
+  //    print(
+  //      friends[i].toUpperCase()
+  //    );
+  //    i++;
+  //  }  
+
 }
