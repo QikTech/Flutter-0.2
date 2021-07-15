@@ -19,20 +19,22 @@ void main() {
   double num2=promptDouble();
   String output= prompt("Enter an operation (+-/*): ");
 
-  if(output == '+'){
+
+  switch(output){
+  case'+':
     print(num1+num2);
-  }
-  else if (output == '-'){
-    print(num1-num2);
-  }
-  else if (output == '/'){
+    break;
+  case'/':
     print(num1/num2);
-  }
-  else if (output == '*'){
+    break;
+  case'*':
     print(num1*num2);
-  }
-  else{
-    print('Incorrect Math operation, Try Again');
+    break;
+  case'-':
+    print(num1-num2);
+    break;
+  default:
+    print('Ivalid operation');
   }
 
 }
