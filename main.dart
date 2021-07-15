@@ -8,30 +8,19 @@ String prompt(String promptText){
   return answer;
 }
 
-
+void drawTriangle(int numTriangles){
+  for(int i=0; i<numTriangles; i++){
+    print(' /|');
+    print('/_|');
+    print('');
+  }
+  
+}
 
 
 void main() {
 
-  List<String> friends=['tushar','ketan','prasanna','susmit'];
+  drawTriangle(5);
 
-//FOR IN LOOP
-  for(String friend in friends){
-    print(friend);
-  }
-
-//FOR LOOP
-  //for(int i=0; i<friends.length; i++){
-  //  print(friends[i].toUpperCase());
-  //}
-
-  //WHILE LOOP 
-  //  int i=0; //INITIALIZATION OF COUNTER VARIABLE
-  //  while(i<4){
-  //    print(
-  //      friends[i].toUpperCase()
-  //    );
-  //    i++;
-  //  }  
 
 }
