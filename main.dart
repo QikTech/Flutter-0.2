@@ -21,7 +21,9 @@ class Book {
 void main() {
   
   //Book No 1
-  Book hp=Book('Prisner of Azkban','jk',500); //object of class
+  Book hp=Book('Prisner of Azkban','jk Rowling',500); //object of class
+  Book GOT=Book('Game Of Thrones','RR Martin',400); //object of class
+  
   //hp.title='Prisner of Azkban';
   //hp.author='jk Rowling';
   //hp.numOfPages=500;
@@ -30,6 +32,7 @@ void main() {
   print(hp.author);
   print(hp.numOfPages);
 
+  print('${GOT.title}, ${GOT.author}, ${GOT.numOfPages}');
 }
 
 
