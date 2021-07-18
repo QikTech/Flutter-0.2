@@ -1,39 +1,37 @@
 import "dart:io";
+import "dart:math";
 
 // Class
-class Student {
-  String name;
-  double gpa;
+class MathQuestion {
+  //Class Attributes/Properties
+  String question;
+  double answer;
+  //Class Attributes/Properties
 
-  //CONSTRUCTOR FUNCTION
-  Student(String aName, double aGpa){
-    this.name=aName;
-    this.gpa=aGpa;
+  MathQuestion(String aQuestion, double aAnswer){
+  this.question=aQuestion;
+  this.answer=aAnswer;
   }
-  //CONSTRUCTOR FUNCTION
-
-//HELPER METHOD
-  bool hasGoodGrades(){
-    return this.gpa >=6;
-  }
-//HELPER METHOD
-
-
 }
 // Class
 
 
 void main() {
+  //Declaring Objects
+  MathQuestion question1 = MathQuestion("3+5",8);
+  MathQuestion question2 = MathQuestion("10-7",3);
+  MathQuestion question3 = MathQuestion("100*11",900);
+  //To avoid this repeat code Use LIST 
 
-//DECLARING VARIABLES
-  Student ketan=Student('Ketan',6.5);
-  Student prasanna=Student('Prasanna',5);
+  List<MathQuestion> questions=[
+    MathQuestion("3+5",8),
+    MathQuestion("10-7",3),
+    MathQuestion("100*11",900)
+  ];
 
-  print(ketan.name);
-  print(ketan.gpa);
-
-  print(ketan.hasGoodGrades());
-  print(prasanna.hasGoodGrades());
+  print(
+    questions[2].answer
+  );
 
 
   
